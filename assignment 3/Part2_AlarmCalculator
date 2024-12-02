@@ -1,0 +1,27 @@
+# CSC500 Critical Thinking Assignment 3
+# Andrew Cunningham
+# 1 Dec 24
+
+# Gets the current time from the user then the number of hours in the future.
+# outputs the hour in the future in a 24 hour cycle
+
+print("Future hour calculator:")
+print("Current whole number hour(0-23):")
+
+try: 
+    current_time = int(input()) % 24
+except:
+    print("Oops I couldn't process that! Please Try again!")
+    exit()
+
+print("Hours in the future(whole number): ")
+
+try: 
+    hours = int(input())
+except:
+    print("Oops I couldn't process that! Please Try again!")
+    exit()
+
+future_time = (current_time + hours) % 24
+
+print(f"{current_time:02}:00 plus {hours} hours is {future_time:02}:00")

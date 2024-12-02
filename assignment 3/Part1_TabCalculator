@@ -1,0 +1,48 @@
+# CSC500 Critical Thinking Assignment 3
+# Andrew Cunningham
+# 1 Dec 24
+
+# input: String formatted: "item name" + " " + "float or int"
+# returns a tuple(String: item name, float: item price)
+# returns ("ERROR(input)", 0.0) if there is no space or chars after last space
+def process_item(input):
+    parts = input.rsplit(maxsplit = 1)
+
+    try:
+        return (parts[0], float(parts[1]))
+    except:
+        return ("ERROR:" + input, 0.0)
+
+# sales tax and tip represented by percentage
+SALES_TAX = 0.07
+TIP = 0.18
+
+items = []
+
+print("Tab calculator")
+print('format: "item" *space* price *Enter*')
+print("Press *Enter* on an empty row to close out tab")
+print()
+
+line_item = input()
+
+while(line_item != ""):
+    items.append(process_item(line_item))
+    line_item = input()
+
+# find the sum of each of the values
+subtotal = sum([item[1] for item in items])
+tax = subtotal * SALES_TAX
+tip = subtotal * TIP
+grand_total = subtotal + tax + tip
+
+# output the receipt
+print("Receipt")
+print("")
+for item in items:
+    print("{}: ${:.2f}".format(item[0], item[1]))
+print()
+print("Tip ({}%): ${:.2f}".format(int(TIP * 100), tip))
+print("Tax ({}%): ${:.2f}".format(int(SALES_TAX * 100), tax))
+print("Total: ${:.2f}".format(grand_total))
+print()
