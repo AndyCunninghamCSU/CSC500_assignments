@@ -22,7 +22,7 @@ class ItemToPurchase:
         item_quantity: int
         '''
         self.item_name = item_name.strip() if item_name and item_name.strip() else 'none'
-        self.item_price = self.clean_int(item_price)
+        self.item_price = self.clean_price(item_price)
         self.item_quantity = self.clean_int(item_quantity)
 
     @staticmethod
