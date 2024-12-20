@@ -12,3 +12,12 @@ Module 4 Portfolio Milestone
 Implements a simple shopping cart to develop skills utilizing classess, list, input cleansing, and cohesion
 Implements the shopping cart both as a GUI and via command line
 switch between the two in main.py
+
+Assignment 5:
+Average rainfall practices loops to gather and calculate average rainfall data from terminal
+Bookstore Rewards practices dictionary lookups
+
+Module 6 Porfolio Milestone
+Expands upon work done in Module 4 by implementing a shopping cart, terminal interface to manipulate the shopping cart. Provides robust input cleansing.
+
+
