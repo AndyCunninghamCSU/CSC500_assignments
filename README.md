@@ -20,4 +20,6 @@ Bookstore Rewards practices dictionary lookups
 Module 6 Porfolio Milestone
 Expands upon work done in Module 4 by implementing a shopping cart, terminal interface to manipulate the shopping cart. Provides robust input cleansing.
 
+Assignment 7:
+Additional practice with classess and dictionaries by implementing several dictionaries to look up course information
 
