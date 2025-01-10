@@ -23,3 +23,5 @@ Expands upon work done in Module 4 by implementing a shopping cart, terminal int
 Assignment 7:
 Additional practice with classess and dictionaries by implementing several dictionaries to look up course information
 
+Module 8:
+Finalized the portfolio milestone and addedd finishing touches.
